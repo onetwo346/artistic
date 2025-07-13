@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Hair Design - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="admin-body">
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1><i class="fas fa-scissors"></i> Artistic Hair Design</h1>
+            <div class="admin-user">
+                <i class="fas fa-user-circle"></i>
+                <span>Admin Panel</span>
+            </div>
+        </header>
+        
+        <main class="admin-main">
+            <div class="admin-sidebar">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#dashboard" data-section="dashboardSection"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                        <li><a href="#bookings" data-section="bookingsSection"><i class="fas fa-calendar-alt"></i> Bookings</a></li>
+                        <li><a href="#stylists" data-section="stylistsSection"><i class="fas fa-user-friends"></i> Stylists</a></li>
+                        <li><a href="#settings" data-section="settingsSection"><i class="fas fa-cog"></i> Settings</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="admin-content">
+                <section id="dashboardSection">
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <h3>Today's Bookings</h3>
+                            <div class="stat-number" id="todayBookings">0</div>
+                            <div class="stat-trend positive">
+                                <i class="fas fa-arrow-up"></i> 15%
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Pending Requests</h3>
+                            <div class="stat-number" id="pendingBookings">0</div>
+                            <div class="stat-badge">Needs Action</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Total Revenue</h3>
+                            <div class="stat-number">$0</div>
+                            <div class="stat-trend positive">
+                                <i class="fas fa-arrow-up"></i> 25%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-calendar">
+                        <div class="calendar-header">
+                            <h2>Upcoming Appointments</h2>
+                            <div class="calendar-controls">
+                                <button id="prevDay"><i class="fas fa-chevron-left"></i></button>
+                                <span id="currentDate">Today</span>
+                                <button id="nextDay"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="calendar-grid" id="appointmentGrid">
+                            <!-- Appointments will be dynamically added here -->
+                        </div>
+                    </div>
+
+                    <div class="recent-bookings">
+                        <h2>Recent Booking Requests</h2>
+                        <div class="booking-list" id="recentBookings">
+                            <!-- Recent bookings will be dynamically added here -->
+                        </div>
+                    </div>
+                </section>
+                <section id="bookingsSection" style="display:none">
+                    <h2>All Bookings</h2>
+                    <div id="allBookingsList"></div>
+                </section>
+                <section id="stylistsSection" style="display:none">
+                    <h2>Stylists</h2>
+                    <div id="stylistsList">
+                        <p>Manage your stylists here. (Feature coming soon!)</p>
+                    </div>
+                </section>
+                <section id="settingsSection" style="display:none">
+                    <h2>Settings</h2>
+                    <div id="settingsContent">
+                        <p>Admin settings and preferences. (Feature coming soon!)</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <div id="bookingModal" class="admin-modal" style="display:none;">
+        <div class="admin-modal-content">
+            <span class="admin-modal-close" id="closeBookingModal">&times;</span>
+            <h2>Booking Details</h2>
+            <div id="modalBookingDetails">
+                <!-- Booking details will be injected here -->
+            </div>
+            <div class="admin-modal-actions" id="modalBookingActions">
+                <!-- Action buttons will be injected here -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html> 

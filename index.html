@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Hair Design - Professional Hair Services in Norwalk, CT</title>
+    <meta name="description" content="Professional hair design and styling services in Norwalk, Connecticut. Expert hair cutting, coloring, and styling services.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Artistic Hair Design</h2>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="#gallery" class="nav-link" role="menuitem">Gallery</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                <li role="none"><a href="#book" class="nav-book" role="menuitem">Book Now</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Elevate<br>Your Beauty</h1>
+            <p class="hero-subtitle">Discover your signature style at Norwalk's most innovative salon. Our master stylists blend artistry with precision to create looks that are uniquely you.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Schedule Your Transformation</a>
+                <a href="#gallery" class="btn btn-secondary">See Our Artistry</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <i class="fas fa-cut"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3>Precision Cuts</h3>
+                <p>Expert haircuts tailored to enhance your unique features and lifestyle.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Color Artistry</h3>
+                <p>From subtle highlights to bold transformations, we create your perfect color.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <h3>Styling & Design</h3>
+                <p>Special occasion styling and everyday looks that make you feel confident.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Consultations</h3>
+                <p>Personalized advice to help you achieve your hair goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="booking-section">
+        <div class="container">
+            <h2>Book Your Appointment</h2>
+            <div class="booking-container">
+                <div class="stylist-selection">
+                    <h3>Choose Your Stylist</h3>
+                    <p class="booking-instruction">👉 Tap a stylist's card below to start booking your appointment through our interactive chat assistant</p>
+                    <div class="stylist-grid" role="radiogroup" aria-label="Select a stylist">
+                        <div class="stylist-card" data-stylist="natasha" role="radio" aria-checked="false" tabindex="0">
+                            <div class="card-click-hint">
+                                <i class="fas fa-hand-pointer"></i>
+                                <span>Tap to Book</span>
+                            </div>
+                            <img src="https://placehold.co/200x200" alt="Natasha, Master Stylist">
+                            <h4>Natasha</h4>
+                            <p>Master Stylist</p>
+                            <div class="stylist-specialties">
+                                <span>Color Expert</span>
+                                <span>Precision Cuts</span>
+                            </div>
+                        </div>
+                        <div class="stylist-card" data-stylist="justina" role="radio" aria-checked="false" tabindex="0">
+                            <div class="card-click-hint">
+                                <i class="fas fa-hand-pointer"></i>
+                                <span>Tap to Book</span>
+                            </div>
+                            <img src="https://placehold.co/200x200" alt="Justina, Senior Stylist">
+                            <h4>Justina</h4>
+                            <p>Senior Stylist</p>
+                            <div class="stylist-specialties">
+                                <span>Extensions</span>
+                                <span>Styling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="booking-help-text">
+                        <i class="fas fa-info-circle"></i>
+                        When you select a stylist, our booking assistant will open to help you schedule your perfect appointment
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Our Work</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-cut"></i>
+                    <p>Modern Cuts</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-palette"></i>
+                    <p>Color Magic</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-magic"></i>
+                    <p>Elegant Styles</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <i class="fas fa-star"></i>
+                    <p>Special Events</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-cta">
+            <p>Love what you see? Book your appointment today!</p>
+            <a href="#book" class="btn btn-primary">Schedule Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>For over 15 years, Artistic Hair Design has been a cornerstone of beauty and style in Norwalk. What started as a vision to create a salon that combines technical excellence with artistic innovation has blossomed into a premier destination for those seeking exceptional hair care.</p>
+                <p>Our team of master stylists brings decades of combined experience, ongoing education, and a passion for staying ahead of industry trends. We believe that every client deserves personalized attention and a style that reflects their unique personality and lifestyle.</p>
+                <p>At Artistic Hair Design, we don't just style hair – we create confidence. Our commitment to excellence extends beyond technical skills to include genuine care for our clients' complete satisfaction. Whether you're looking for a subtle refresh or a bold transformation, our expertise ensures results that exceed expectations.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Satisfaction</p>
+                    </div>
+                </div>
+                <div class="about-certifications">
+                    <h4>Our Expertise</h4>
+                    <ul>
+                        <li>✓ Advanced Color Specialists</li>
+                        <li>✓ Precision Cutting Experts</li>
+                        <li>✓ Certified Hair Extension Professionals</li>
+                        <li>✓ Continuous Education & Training</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-cut"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Visit Us</h3>
+                        <p>114 West Cedar St<br>Norwalk, Connecticut 06850</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>(203) 899-1858</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>natram0823@aol.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Hours</h3>
+                        <p>Monday: Closed<br>
+                           Tuesday-Wednesday: 10AM-4:30PM<br>
+                           Thursday-Friday: 10AM-6:30PM<br>
+                           Saturday: 9AM-3PM<br>
+                           Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <h2>Book Your Appointment</h2>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Tell us about the service you're interested in" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Request Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Artistic Hair Design</h3>
+                <p>Where artistry meets expertise in hair design.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>114 West Cedar St<br>Norwalk, CT 06850</p>
+                <p>(203) 899-1858</p>
+                <p>natram0823@aol.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Artistic Hair Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <h4>Booking Assistant</h4>
+            <div class="chat-controls">
+                <button class="chat-toggle" id="chatToggle" aria-label="Toggle chat">
+                    <i class="fas fa-comments"></i>
+                </button>
+                <button class="chat-close" id="chatClose" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-messages" id="chatMessages">
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message..." aria-label="Chat message">
+                <button id="sendMessage" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
